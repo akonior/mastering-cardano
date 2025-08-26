@@ -2,8 +2,6 @@ name: Build EPUB (TNG)
 
 on:
   push:
-    branches:
-      - main
 
 jobs:
   build-epub:
@@ -15,7 +13,7 @@ jobs:
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
-          ruby-version: '3.4.4'
+          ruby-version: "3.4.4"
           bundler-cache: true
 
       - name: Install Dependencies
@@ -26,8 +24,8 @@ jobs:
       - name: Set up Java
         uses: actions/setup-java@v4
         with:
-          distribution: 'temurin'
-          java-version: '11'
+          distribution: "temurin"
+          java-version: "11"
 
       - name: Build EPUB
         run: ./build-epub.sh
