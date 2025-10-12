@@ -26,6 +26,10 @@ EPUB_PATH="$ABS_OUTDIR/$EPUB_NAME"
 
 echo "▸ cleaning $OUTDIR/"; rm -rf "$ABS_OUTDIR"/*
 
+rm -r images
+
+mv images-processed images
+
 echo "▸ Asciidoctor  ➜  DocBook"
 bundle exec asciidoctor -b docbook \
   -a imagesdir=images --failure-level WARN \
