@@ -126,7 +126,7 @@ applied in Cardano, tuning the level of formal rigor to the particular
 use case. The most prevalent FM technique within Cardano is the use
 of _type systems_. A type system is a set of rules that assigns a
 symbolic property of _type_ to each term, e.g. `5` is an `Integer`, `[1 ; 2]` is
-a List Integer(((list integer)))`, `True` is a `Boolean`, etc. A type system can provide such
+a `List Integer`(((list integer))), `True` is a `Boolean`, etc. A type system can provide such
 guarantees as 'all items in this list are integers', or 'it is not
 possible to add an integer and an error'. A strong type(((type))) system can
 provide strong formal guarantees, so, to quote Simon Peyton Jones(((Peyton Jones, Simon))), type
@@ -163,7 +163,7 @@ significantly simplifies reasoning about the outputs of the function
 given a certain input (or set of inputs).
 
 Haskell is the programming language of choice for building the core
-Cardano node (((Cardano node))), including networking, consensus, and ledger
+Cardano node(((Cardano node))), including networking, consensus, and ledger
 components. It is functional, has a strong typing system, and has been
 around for several decades, boasting a dedicated user and maintainer
 base. In fact, prior to using proof assistants(((proof assistant))) for specification,
